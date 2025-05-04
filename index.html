@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfolio - Octávio Augusto</title>
+</head>
+<body>
+    <!-- Menu Fixo -->
+    <nav>
+        <button id="menu-toggle">☰</button>
+        <div id="menu-links">
+            <a href="#container">Início</a>
+            <a href="#sobreMim">Sobre</a>
+            <a href="#imgProjetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="container">
+        <div id="informacoes" data-aos="fade-right">
+            <p>Olá, eu sou</p>
+            <h1 id="typewriter">O</h1>
+            <div class="tech-logos">
+                <img alt="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                <img alt="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                <img alt="JavaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                <img alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+            </div>
+            <h2>Desenvolvedor Web</h2>
+            <h3>Eu sou desenvolvedor web especializado em <br> desenvolvimento front-end. Atualmente, estou <br> aprimorando meus conhecimentos em desenvolvi- <br>mento de aplicações web responsivas.</h3>
+            <button onclick="document.querySelector('#imgProjetos').scrollIntoView({ behavior: 'smooth' })">Ver Projetos</button>
+        </div>
+        <div id="myimg" data-aos="fade-left">
+            <img src="imgs/eu.png" alt="Octávio Augusto" id="minhaFoto">
+        </div>
+    </div>
+
+    <!-- Sobre Mim -->
+    <div id="sobreMim" data-aos="fade-up">
+        <div id="infoProjetos">
+            <div id="textsSobre">
+                <h2>Sobre Mim</h2>
+                <h3>Sou um desenvolvedor web com experiência em criação de sites <br> e aplicações web. Gosto de resolver problemas e criar experiências <br> de usuário intuitivas e eficientes.</h3>
+            </div>
+            <div id="imgProjetos">
+                <div class="flexivel">
+                    <div class="projetos" data-aos="zoom-in">
+                        <br><br><br><br><br>
+                        <button class="botaoDesativado">Saiba mais</button>
+                    </div>
+                    <div class="projetos" data-aos="zoom-in">
+                        <br><br><br><br><br>
+                        <button class="botaoDesativado">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="flexivel">
+                    <div class="projetos" data-aos="zoom-in">
+                        <br><br><br><br><br>
+                        <button class="botaoDesativado">Saiba mais</button>
+                    </div>
+                    <div class="projetos" data-aos="zoom-in">
+                        <br><br><br><br><br>
+                        <button class="botaoDesativado">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <footer id="contato" data-aos="fade-up">
+        <h2>Contato</h2>
+        <h3>Sinta-se à vontade para entrar em contato comigo através das redes sociais abaixo.</h3>
+        <div id="redesSociais">
+            <a href="http://www.linkedin.com/in/octavio-augusto-7b3501325/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/taviok1ng/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:octavioaugusto5566@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="http://github.com/octavioaugustocr" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

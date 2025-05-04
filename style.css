@@ -1,0 +1,326 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #0d0f16;
+    padding-top: 60px;
+    transition: background 0.5s ease, color 0.3s ease;
+}
+
+/* ===== MENU FIXO ===== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(13, 15, 22, 0.9);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    color: #f5f5f5;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+#menu-toggle {
+    display: none !important;
+}
+
+#menu-links {
+    display: block !important;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 12.5% 0;
+}
+
+#container #informacoes {
+    margin: 9.5% 0 0 8%;
+}
+
+#container #informacoes p {
+    color: #bbbbbb;
+    font-size: 1.7em;
+}
+
+#container #informacoes h1 {
+    color: #f5f5f5;
+    font-size: 4em;
+    min-height: 1.2em;
+}
+
+#container #informacoes h2 {
+    color: #3b82f6;
+    font-size: 2.3em;
+}
+
+#container #informacoes button {
+    background-color: #3b82f6;
+    color: #f5f5f5;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#container #informacoes button:hover {
+    transform: translateY(-3px);
+}
+
+#container #informacoes h3 {
+    color: #a3a3a3;
+    margin: 0 0 3% 0;
+}
+
+#container #myimg {
+    background-color: #2a2d34;
+    width: 32%;
+    height: 90%;
+    border-radius: 40px;
+    display: flex;
+    margin: 1% 5% 0 60%;
+    position: absolute;
+}
+
+#minhaFoto {
+    width: 90%;
+    margin: 0 0 0.5% 6%;
+}
+
+/* ===== SOBRE MIM ===== */
+#sobreMim {
+    background-color: #141414;
+    display: flex;
+}
+
+#sobreMim #infoProjetos {
+    width: 100%;
+    margin: 0 0 10% 0;
+}
+
+#sobreMim #infoProjetos #textsSobre {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 4% 21%;
+}
+
+#sobreMim #infoProjetos #textsSobre h2 {
+    color: #f5f5f5;
+    font-size: 2.2em;
+    margin: 5% 0 0 0;
+}
+
+#sobreMim #infoProjetos #textsSobre h3 {
+    color: #a5a5a5;
+    display: flex;
+    font-size: 1.1em;
+}
+
+/* ===== PROJETOS ===== */
+.projetos {
+    border-radius: 15px;
+    background-color: #1c1f26;
+    margin: 0 0 15px 15px;
+    transition: transform 0.3s;
+}
+
+.projetos:hover {
+    transform: translateY(-5px);
+}
+
+#imgProjetos {
+    display: flex;
+    justify-content: center;
+}
+
+.flexivel {
+    width: 30%;
+}
+
+.projetos > button {
+    background-color: #3b82f6;
+    color: #f5f5f5;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 0 1.5% 38%;
+    transition: transform 0.3s;
+}
+
+.projetos > button:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== TECNOLOGIAS ===== */
+.tech-logos img {
+    width: 3%;
+    transition: transform 0.3s;
+}
+
+.tech-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    width: 100%;
+}
+
+footer h2 {
+    color: #f5f5f5;
+    font-size: 2.2em;
+    margin: 5% 0 0 0;
+    text-align: center;
+}
+
+footer h3 {
+    color: #a5a5a5;
+    display: flex;
+    font-size: 1.1em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: #3b82f6;
+}
+
+footer a i {
+    font-size: 50px;
+    transition: transform 0.3s;
+}
+
+footer a:hover i {
+    transform: translateY(-5px);
+}
+
+footer {
+    margin: 0 0 3% 0;
+}
+
+#redesSociais {
+    width: 100%;
+    margin: 2.5% 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+
+    #container #informacoes {
+        margin: 20% 5% 5% 5%;
+        text-align: center;
+    }
+
+    #container #myimg {
+        position: relative;
+        width: 80%;
+        margin: 5% auto;
+        height: auto;
+    }
+
+    #minhaFoto {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tech-logos img {
+        width: 8%;
+        margin: 0 5px;
+    }
+
+    #sobreMim #infoProjetos #textsSobre {
+        margin: 5%;
+        text-align: center;
+    }
+
+    .flexivel {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .projetos {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Menu Mobile */
+    #menu-toggle {
+        display: block !important;
+        background: none;
+        border: none;
+        color: #f5f5f5;
+        font-size: 1.5em;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    #menu-links {
+        display: none !important;
+        flex-direction: column;
+        background-color: rgba(13, 15, 22, 0.95);
+        padding: 10px;
+    }
+
+    #menu-links.show {
+        display: flex !important;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #container #informacoes h1 {
+        font-size: 2.5em;
+    }
+
+    #container #informacoes h2 {
+        font-size: 1.5em;
+    }
+
+    #container #informacoes h3 {
+        font-size: 0.9em;
+    }
+
+    .projetos > button {
+        margin-left: 30%;
+    }
+
+    footer h3 {
+        font-size: 0.9em;
+        padding: 0 10px;
+    }
+
+    footer a i {
+        font-size: 30px;
+    }
+}
